@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:influxdev/card/card.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:influxdev/container/container.dart';
+import 'package:influxdev/container/container2.dart';
+import 'package:influxdev/drawer/drawer.dart';
+import 'package:influxdev/main&cross/main&cross.dart';
+import 'package:influxdev/row&column/column&row.dart';
+import 'package:influxdev/simple_form/form.dart';
+import 'package:influxdev/stack/stack.dart';
+import 'package:influxdev/text/text.dart';
 
 void main() {
   runApp(MyApp());
@@ -42,6 +50,94 @@ class _HomeState extends State<Home> {
                       MaterialPageRoute(builder: (context) => Cards()));
                 },
                 child: Text("Cards"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Stacks()));
+                },
+                child: Text("stack"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Containers()));
+                },
+                child: Text("Container"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Containerss()));
+                },
+                child: Text("Container2"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Texts()));
+                },
+                child: Text("Text"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Columns()));
+                },
+                child: Text("coloumn&row"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Drawers()));
+                },
+                child: Text("Drawer"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MainA()));
+                },
+                child: Text("Main&Cross"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Simple_form()));
+                },
+                child: Text("Simple Form"),
                 color: Colors.green,
               ),
             )
