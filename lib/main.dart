@@ -7,6 +7,7 @@ import 'package:influxdev/container/container.dart';
 import 'package:influxdev/container/container2.dart';
 import 'package:influxdev/drawer/drawer.dart';
 import 'package:influxdev/grid/grid.dart';
+import 'package:influxdev/gridN/gridN.dart';
 import 'package:influxdev/image/image.dart';
 import 'package:influxdev/main&cross/main&cross.dart';
 import 'package:influxdev/row&column/column&row.dart';
@@ -190,6 +191,17 @@ class _HomeState extends State<Home> {
                       context, MaterialPageRoute(builder: (context) => Grid()));
                 },
                 child: Text("Grid"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => GridN()));
+                },
+                child: Text("GridN"),
                 color: Colors.green,
               ),
             )

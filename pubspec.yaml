@@ -41,6 +41,7 @@ dependencies:
   page_transition: ^2.1.0
   compass_icon: ^1.0.4
   cupertino_icons: ^1.0.6
+  fluttertoast: ^8.2.2
 
 
 dev_dependencies:
