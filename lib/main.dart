@@ -7,6 +7,7 @@ import 'package:influxdev/container/container.dart';
 import 'package:influxdev/container/container2.dart';
 import 'package:influxdev/drawer/drawer.dart';
 import 'package:influxdev/figma1/main.dart';
+import 'package:influxdev/figma2/figma2.dart';
 import 'package:influxdev/grid/grid.dart';
 import 'package:influxdev/gridN/gridN.dart';
 import 'package:influxdev/image/image.dart';
@@ -214,6 +215,19 @@ class _HomeState extends State<Home> {
                       MaterialPageRoute(builder: (context) => Figma1()));
                 },
                 child: Text("Figma1"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => DashboardScreen()));
+                },
+                child: Text("Figma2"),
                 color: Colors.green,
               ),
             )
