@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:influxdev/BottomnavigationBars/BottomnavigationBars.dart';
+import 'package:influxdev/F_UI_01/ui1.dart';
 import 'package:influxdev/card/card.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:influxdev/contact/contact3.dart';
@@ -226,6 +227,17 @@ class _HomeState extends State<Home> {
                       context,
                       MaterialPageRoute(
                           builder: (context) => DashboardScreen()));
+                },
+                child: Text("Figma2"),
+                color: Colors.green,
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 30, left: 100, right: 100),
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Login1stui()));
                 },
                 child: Text("Figma2"),
                 color: Colors.green,

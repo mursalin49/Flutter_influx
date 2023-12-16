@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "392178451012",
+    "project_id": "influx-firebase",
+    "storage_bucket": "influx-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:392178451012:android:b130950243e320538cb211",
+        "android_client_info": {
+          "package_name": "com.example.influxdev"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUG7c9_E7_gpm5rZQEJpWIzjGScYs1qbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
